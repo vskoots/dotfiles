@@ -13,14 +13,6 @@ alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
 alias sites="cd $HOME/Sites"
 
-# Vagrant
-# alias v="vagrant global-status"
-# alias vup="vagrant up"
-# alias vhalt="vagrant halt"
-# alias vssh="vagrant ssh"
-# alias vreload="vagrant reload"
-# alias vrebuild="vagrant destroy --force && vagrant up"
-
 # Docker
 alias docker-composer="docker-compose"
 #alias dstop="docker stop $(docker ps -a -q)"
@@ -33,7 +25,7 @@ alias docker-composer="docker-compose"
 alias commit="git add . && git commit -m"
 alias gcommit="git add . && git commit"
 alias wip="commit wip"
-alias gst="git status"
+alias gs="git status"
 alias gb="git branch"
 alias gc="git checkout"
 alias gd="git diff"
