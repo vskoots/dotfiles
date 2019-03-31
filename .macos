@@ -148,10 +148,10 @@ defaults write com.apple.dock minimize-to-application -bool true
 # Wipe all (default) app icons from the Dock
 # This is only really useful when setting up a new Mac, or if you don’t use
 # the Dock to launch apps.
-defaults write com.apple.dock persistent-apps -array
+# defaults write com.apple.dock persistent-apps -array
 
-# Show only open applications in the Dock
-defaults write com.apple.dock static-only -bool true
+# Show only open applications in the Dock (false reverts to normal behaviour)
+# defaults write com.apple.dock static-only -bool true
 
 # Group windows by application in Mission Control
 defaults write com.apple.dock expose-group-by-app -bool true
@@ -170,10 +170,6 @@ defaults write com.apple.dock autohide-time-modifier -float 0
 
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
-
-# Add iOS & Watch Simulator to Launchpad
-sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app" "/Applications/Simulator.app"
-sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator (Watch).app" "/Applications/Simulator (Watch).app"
 
 # Hot corners
 # Possible values:
@@ -275,8 +271,8 @@ defaults write com.apple.ical "number of hours displayed" 24
 # Week should start on Monday
 defaults write com.apple.ical "first day of the week" 1
 
-# Day starts at 9AM
-defaults write com.apple.ical "first minute of work hours" 540
+# Day starts at 8AM
+defaults write com.apple.ical "first minute of work hours" 460
 
 ###############################################################################
 # Date & Time                                                                 #
